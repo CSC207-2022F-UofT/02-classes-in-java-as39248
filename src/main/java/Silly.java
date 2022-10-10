@@ -199,26 +199,17 @@ public class Silly implements Comparable<Silly>{
          *                You can get the length of a string by using the
          *                .length() method.
          */
-        int len_this = this.name.length();
-        int len_other = other.name.length();
-        if (len_this > len_other) {
-            return 1;
-        } else if (len_other > len_this) {
-            return -1;
-        }else {
-            return 0;
-        }
+        return this.name.length() - other.name.length();
 
+        /*
+         * TODO (Task 6): Submit the changes you made on GitHub!
+         *                When you submit it, go to the 'Actions' tab. You should
+         *                be able to see this exercise being autograded!
+         *
+         *                You can click on the ongoing action to see more details.
+         *                If the tests don't pass, look at the results and revise
+         *                accordingly.
+         */
     }
-
-    /*
-     * TODO (Task 6): Submit the changes you made on GitHub!
-     *                When you submit it, go to the 'Actions' tab. You should
-     *                be able to see this exercise being autograded!
-     *
-     *                You can click on the ongoing action to see more details.
-     *                If the tests don't pass, look at the results and revise
-     *                accordingly.
-     */
 }
 
